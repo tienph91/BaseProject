@@ -31,6 +31,7 @@ Base Java Maven Project for Server API
   - Freemaker for sending mail with template files
   - Read properties files
   - Singleton
+  - Java reflection for trim all String properties
 
   
 # Deploy tool
