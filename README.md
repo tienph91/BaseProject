@@ -10,7 +10,7 @@ Base Java Maven Project for Server API
   - SqlServer
   - Postgresql
   
-# Công nghệ sử dụng
+# Technical features
   - Spring boot
   - Flyway
   - Lombook
@@ -29,6 +29,8 @@ Base Java Maven Project for Server API
   - Firebase
   - Send mail using SMTP/Aws Sns with UTF-8 characters
   - Freemaker for sending mail with template files
+  - Read properties files
+  - Singleton
 
   
 # Deploy tool
