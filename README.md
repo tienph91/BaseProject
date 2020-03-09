@@ -32,7 +32,7 @@ Base Java Maven Project for Server API
   - Read properties files
   - Singleton
   - Java reflection for trim all String properties
-
+  - https://commons.apache.org/proper/commons-beanutils/apidocs/org/apache/commons/beanutils/BeanUtilsBean.html
   
 # Deploy tool
   - Docker
