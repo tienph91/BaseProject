@@ -33,6 +33,7 @@ Base Java Maven Project for Server API
   - Singleton
   - Java reflection for trim all String properties
   - https://commons.apache.org/proper/commons-beanutils/apidocs/org/apache/commons/beanutils/BeanUtilsBean.html
+  - Apache Commons Lang StringUtils
   
 # Deploy tool
   - Docker
