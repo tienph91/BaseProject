@@ -15,7 +15,6 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class App {
     public static void main(String[] args) {
-        System.setProperty("server.servlet.context-path", "/baeldung");
         System.out.println("Hello World!");
         SpringApplication.run(App.class, args);
     }
