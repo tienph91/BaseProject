@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import com.baseproject.business.menu.dto.MenuResponseDto;
-import com.baseproject.business.menu.model.Menu;
+import com.baseproject.business.menu.entities.Menu;
 import com.baseproject.business.menu.repository.MenuRepository;
 import com.googlecode.jmapper.JMapper;
 

@@ -1,4 +1,4 @@
-package com.baseproject.business.menu.model;
+package com.baseproject.business.menu.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
