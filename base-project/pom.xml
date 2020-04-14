@@ -120,6 +120,16 @@
 			<version>1.6.0.1</version>
 		</dependency>
 
+		<!-- redis -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.lettuce</groupId>
+			<artifactId>lettuce-core</artifactId>
+		</dependency>
+
 		<!-- dev tool -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
