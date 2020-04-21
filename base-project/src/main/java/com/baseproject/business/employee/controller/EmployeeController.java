@@ -2,11 +2,16 @@ package com.baseproject.business.employee.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+import javax.validation.constraints.Min;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +25,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/employee")
+@Validated
 public class EmployeeController {
 
 	private static final Logger logger = LogManager.getLogger(EmployeeController.class);
@@ -27,9 +33,9 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
 
-	@GetMapping("")
-	@ApiOperation(value = "Get all employee")
-	public ResponseEntity<List<EmployeeResponseDto>> getAllActiveMenu() {
+	@GetMapping("/{id}")
+	public ResponseEntity<List<EmployeeResponseDto>> getAllActiveMenu(
+			@Valid @PathVariable @Min(value = 1, message = "Lon hon 1") int id) {
 
 		try {
 			List<EmployeeResponseDto> list = employeeService.getAllEmployess();
